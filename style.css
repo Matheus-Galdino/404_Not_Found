@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font-family: "Space Mono", monospace;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+body {
+  padding: 2rem 3rem 1rem;
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  flex-grow: 0;
+}
+
+header span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+
+  margin: 10rem 0;
+}
+
+main img {
+  width: 35rem;
+  margin: 0 auto;
+}
+
+main div h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+
+  margin: 6rem 0 2.5rem;
+}
+
+main div h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+
+  margin-bottom: 4rem;
+}
+
+main div button {
+  background: #333333;
+
+  color: white;
+  font-weight: 700;
+
+  padding: 2rem 4rem;
+
+  border: none;
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+}
+
+h4 {
+  text-align: center;
+
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+h4 span {
+  color: #2980b9; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer {
+  flex-grow: 0;
+}
+
+footer p {
+  text-align: center;
+
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1050px) {
+  body {
+    padding: 30px 50px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  header span {
+    font-size: 30px;
+  }
+
+  main {
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+
+  main div {
+    max-width: 600px;
+  }
+
+  main img {
+    width: 540px;
+    height: 447px;
+
+    margin: 0;
+  }
+
+  main div h1 {
+    font-size: 60px;
+
+    line-height: 70px;
+
+    margin: 0;
+  }
+
+  main div h3 {
+    font-size: 25px;
+
+    margin: 50px 0;
+  }
+
+  main div button {
+    height: 68px;
+    width: 218px;
+
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  h4 {
+    font-size: 19px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  footer p {
+    text-align: center;
+
+    font-size: 18px;
+  }
+}
